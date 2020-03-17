@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<script>
+    function isFibonacci(n)
+    {
+        let first=0, second=1, sum;
+        while(first+second<=n)
+        {
+            sum=first+second;
+            first=second;
+            second=sum;
+        }
+        if (sum===n)
+        {
+            console.log(true);
+        }
+        else
+        {
+            console.log(false);
+        }
+    }
+
+    isFibonacci(5);
+</script>
+</body>
+</html>
